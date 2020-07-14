@@ -1,0 +1,18 @@
+aqui teria que importa o scrollView
+
+<ScrollView style={styles.container}>
+      {projects.map(project => (
+        <Text style={styles.project} key={project.id}>{project.title}</Text>
+      ))}
+      </ScrollView> 
+    </>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#7159c1",
+    // justifyContent: 'center', com scrollView, não pode usar justify e align.
+    // alignItems: 'center'
+  },
