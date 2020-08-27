@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
+import backgroundImg from '../assets/github-background.svg';
+
 export default createGlobalStyle`
   *{
     margin: 0;
@@ -9,7 +11,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background: #f0f0f5 url('https://xesque.rocketseat.dev/platform/1587379725719-attachment.svg') no-repeat 70% top;
+    background: #f0f0f5 url(${backgroundImg}) no-repeat 70% top;
     -webkit-font-smoothing: antialiased;
   }
 
